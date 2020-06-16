@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SimiSoft | Главная страница</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'app/css/main.css'>
+	<link rel = 'shortcut icon' href = 'app/imgs/logo.png' type = 'image/png'>
+
+</head>
+<body>
+
+	<div class = 'module' id = 'top-container'>
+		<img src = 'app/imgs/menu.png' id = 'btn-menu'>
+		<div id = 'popup-menu' class = 'popup-menu'>
+
+			<div class = 'logo-div-menu'>
+				<a class = 'name-menu'>Меню</a>
+			</div>
+
+			<a class = 'home-url' href = 'index.html'>
+				<img class = 'home-url-img' src = 'app/imgs/home.png'>
+				<h1 class = 'home-h'>Главная страница</h1>
+			</a>
+
+			<a class = 'projects-url' href = 'projects.html'>
+				<img class = 'home-url-img' src = 'app/imgs/close-folder.png'>
+				<h1 class = 'home-h'>Проекты</h1>
+			</a>
+
+			<a class = 'about-url' href = 'about.html'>
+				<img class = 'home-url-img' src = 'app/imgs/info.png'>
+				<h1 class = 'home-h'>О нас</h1>
+			</a>
+
+			<a class = 'new-idea-url' href = 'new-idea.html'>
+				<img class = 'home-url-img' src = 'app/imgs/plus.png'>
+				<h1 class = 'home-h'>Предложить идею</h1>
+			</a>
+
+			<a class = 'contacts-url' href = 'contacts.html'>
+				<img class = 'home-url-img' src = 'app/imgs/email.png'>
+				<h1 class = 'home-h'>Контакты</h1>
+			</a>
+
+			<!--<a id = 'close' href = ''>
+				<img class = 'home-url-img' src = 'app/imgs/close.png'>
+				<h1 class = 'home-h'>Закрыть меню</h1>
+			</a>-->
+
+		</div>
+		<a href = '' class = 'logo-box'>
+			SimiSoft
+		</a>
+	</div>
+
+	<div id = 'bottom-menu'>
+
+		<a href = 'index.html' class = 'mob-urls-img-bottom-menu'>
+			<img src = 'app/imgs/home.png' alt="" width = '16%'>
+		</a>
+
+		<a href = 'projects.html' class = 'mob-urls-img-bottom-menu'>
+			<img src = 'app/imgs/open-folder.png' alt="" width = '16%'>
+		</a>
+
+		<a href = 'new-idea.html' class = 'mob-urls-img-bottom-menu'>
+			<img src = 'app/imgs/plus.png' alt="" width = '16%'>
+		</a>
+
+		<a href = 'about.html' class = 'mob-urls-img-bottom-menu'>
+			<img src = 'app/imgs/info.png' alt="" width = '16%'>
+		</a>
+
+		<a href = 'contacts.html' class = 'mob-urls-img-bottom-menu'>
+			<img src = 'app/imgs/peoples.png' alt="" width = '16%'>
+		</a>
+
+	</div>
+
+	<div class = 'contacts-div'>
+		
+	</div>
+
+	<script type="text/javascript">
+		let popup = document.getElementById('popup-menu'),
+			popupBtn = document.getElementById('btn-menu'),
+			popupClose = document.querySelector('.close');
+
+			popupBtn.onclick = function() {
+					popup.style.display = 'block';
+				}
+
+			popupClose.onclick = function() {
+				popup.style.display = 'none';
+			}
+	</script>
+
+</body>
+</html>
